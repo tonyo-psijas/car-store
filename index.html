@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car store</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1:wght@100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header box">
+        <nav>
+            <span class="logo fs-4">LITHIUM</span>
+            <ul>
+                <li><a class="desactivado" href="#">Inicio</a></li>
+                <li><a class="activado" href="#">Catálogo</a></li>
+                <li><a class="desactivado" href="#">Cotizar</a></li>
+                <li><a class="desactivado" href="#">Contacto</a></li>
+            </ul>
+            <button class="compra-online"><a href="#">COMPRA ONLINE</a></button>
+        </nav>
+    </header>
+
+    <aside class="aside box">
+        <h1 class="fw-bold text-black">Catálogo</h1>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active bg-black" aria-current="page" href="#">Nuevos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-light text-black" href="#">Usados</a>
+            </li>
+        </ul>
+        <div class="aside-menu">
+
+            <div class="categorias menu-item">
+                <a class=" text-black collapse-aside-btn" data-bs-toggle="collapse" href="#collapse-categorias" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-medium fs-5">Categorías</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="collapse-categorias">
+                    <div class="collapse-list">
+                        <br>
+                        <ul>
+                            <li><a class="activado-collapse" href="#">Todos</a></li>
+                            <li><a class="desactivado" href="#">Eléctricos</a></li>
+                            <li><a class="desactivado" href="#">Híbridos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="precio menu-item">
+                <a class=" text-black collapse-aside-btn" data-bs-toggle="collapse" href="#collapse-precio" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-medium fs-5">Precio</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="collapse-precio">
+                    <div class="collapse-list">
+                        <br>
+                        <ul>
+                            <li><a class="activado-collapse" href="#">Menor Precio</a></li>
+                            <li><a class="desactivado" href="#">Mayor Precio</a></li>
+                            <li><a class="desactivado" href="#">Ofertas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colores menu-item">
+                <a class=" text-black collapse-aside-btn" data-bs-toggle="collapse" href="#collapse-colores" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-medium fs-5">Colores</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="collapse-colores">
+                    <div class="collapse-list">
+                        <br>
+                        <ul>
+                            <li><a class="activado-collapse" href="#">Todos</a></li>
+                            <li><a class="desactivado" href="#">Blanco</a></li>
+                            <li><a class="desactivado" href="#">Negro</a></li>
+                            <li><a class="desactivado" href="#">Gris</a></li>
+                            <li><a class="desactivado" href="#">Rojo</a></li>
+                            <li><a class="desactivado" href="#">Azul</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marcas menu-item">
+                <a class=" text-black collapse-aside-btn" data-bs-toggle="collapse" href="#collapse-marcas" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-medium fs-5">Marcas</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="collapse-marcas">
+                    <div class="collapse-list">
+                        <br>
+                        <ul>
+                            <li><a class="activado-collapse" href="#">Todos</a></li>
+                            <li><a class="desactivado" href="#">Tesla</a></li>
+                            <li><a class="desactivado" href="#">BYD</a></li>
+                            <li><a class="desactivado" href="#">Hyundai</a></li>
+                            <li><a class="desactivado" href="#">Volvo</a></li>
+                            <li><a class="desactivado" href="#">MG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+    <main class="main box">
+        <div class="buscador">
+            <form class="d-inline-flex p-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Encuentra tu producto" aria-label="Search"/>
+                <button class="btn bg-primary text-light" type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="inventario">
+
+            <div class="card byd-dolphin">
+                <img src="assets/images/dolphin-mini.png" class="card-img-top" alt="BYD Dolphin Mini Negro">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">BYD Dolphin Mini</h4>
+                    <h5 class="text-black fw-normal">$16.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/byd-logo.png" alt="" class="brand-logo">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-solid fa-circle text-black"></i> <span>Negro</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+
+            <div class="card hyundai-kona">
+                <img src="assets/images/hyundai-kona.png" class="card-img-top img-auto" alt="Hyundai Kona blanco">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">Hyundai Kona</h4>
+                    <h5 class="text-black fw-normal">$22.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/hyundai-logo.png" alt="" class="brand-logo">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-regular fa-circle text-black"></i> <span>Blanco</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+
+            <div class="card mg-zs">
+                <img src="assets/images/mg-zs.png" class="card-img-top img-auto" alt="MG ZS rojo">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">MG ZS EV</h4>
+                    <h5 class="text-black fw-normal">$26.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/mg-logo.png" alt="" class="brand-logo-mg">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-solid fa-circle text-danger"></i> <span>Rojo</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+
+            <div class="card volvo-ex30">
+                <img src="assets/images/volvo-ex30.png" class="card-img-top img-auto" alt="Volvo EX30 gris">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">Volvo EX30</h4>
+                    <h5 class="text-black fw-normal">$30.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/volvo-logo.png" alt="" class="brand-logo">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-solid fa-circle text-secondary"></i> <span>Gris</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+
+            <div class="card tesla-3">
+                <img src="assets/images/tesla-3.png" class="card-img-top img-auto" alt="Tesla Model 3 azul">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">Tesla Model 3</h4>
+                    <h5 class="text-black fw-normal">$38.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/tesla-logo.png" alt="" class="brand-logo">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-solid fa-circle text-primary"></i> <span>Azul</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+
+            <div class="card tesla-y">
+                <img src="assets/images/tesla-y.png" class="card-img-top img-auto" alt="Tesla Model Y gris">
+                <div class="card-body">
+                    <h4 class="text-black fw-semibold mb-1">Tesla Model Y</h4>
+                    <h5 class="text-black fw-normal">$42.000.000</h5>
+                    <span class="car-status mb-4">Vehículo nuevo 2025</span>
+                    <div class="features">
+                        <div class="brand">
+                            <img src="assets/images/tesla-logo.png" alt="" class="brand-logo">
+                        </div>
+                        <div class="car-color">
+                            <i class="fa-solid fa-circle text-secondary"></i> <span>Gris</span>
+                        </div>
+                        <div class="car-type">
+                            <i class="fa-solid fa-bolt text-black"></i> <span>Eléctrico</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="ver-detalles mx-3 mb-3"><a href="#">Ver detalles</a></button>
+            </div>
+            
+        </div>
+
+        <div class="paginacion">
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item"><a href="#" class="page-link text-black">Anterior</a></li>
+                  <li class="page-item active"><a class="page-link bg-black border-black" href="#" aria-current="page">1</a></li>
+                  <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-black" href="#">Siguiente</a></li>
+                </ul>
+              </nav>
+        </div>
+
+    </main>
+
+    <footer class="footer box">
+        <span>Lithium © 2025</span>
+        <span><a href="#">Términos y condiciones</a></span>
+        <span><a href="#">Contacto</a></span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5dd432f1ea.js" crossorigin="anonymous"></script>
+</body>
+</html>

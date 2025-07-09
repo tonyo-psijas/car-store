@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    font-family: "Zen Dots", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    margin-bottom: 0;
+}
+
+.activado {
+    text-decoration: none;
+    color: white;
+}
+
+.activado-collapse {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.desactivado, .car-status, .car-color, .car-type {
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+}
+
+button a {
+   text-decoration: none;
+   color: white;
+}
+
+.compra-online {
+    border: solid 1px white;
+    background-color: black;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+}
+
+aside {
+    grid-area: aside;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aside-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.collapse-aside-btn {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buscador {
+    display: flex;
+    justify-content: end;
+}
+
+.inventario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.img-auto {
+    object-fit: cover;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-logo {
+    height: 15px;
+}
+
+.brand-logo-mg {
+    height: 24px;
+}
+
+.ver-detalles {
+    border: none;
+    background-color: black;
+    padding: 0.8rem;
+    color: white;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: rgb(132, 132, 132);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+}
