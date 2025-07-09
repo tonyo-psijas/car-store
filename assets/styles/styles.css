@@ -23,22 +23,10 @@ header {
     font-family: "Zen Dots", sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
+
 
 ul {
     list-style: none;
-}
-
-header ul {
-    display: flex;
-    align-items: center;
-    column-gap: 3rem;
-    margin-bottom: 0;
 }
 
 .activado {

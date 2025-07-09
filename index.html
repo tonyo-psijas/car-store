@@ -11,16 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1:wght@100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header box">
-        <nav>
+    <header class="header box p-3">
+
+        <nav class="navbar navbar-expand-md navbar-dark">
             <span class="logo fs-4">LITHIUM</span>
-            <ul>
-                <li><a class="desactivado" href="#">Inicio</a></li>
-                <li><a class="activado" href="#">Catálogo</a></li>
-                <li><a class="desactivado" href="#">Cotizar</a></li>
-                <li><a class="desactivado" href="#">Contacto</a></li>
-            </ul>
-            <button class="compra-online"><a href="#">COMPRA ONLINE</a></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav text-start m-auto">
+                    <li><a class="desactivado nav-link me-3" href="#">Inicio</a></li>
+                    <li><a class="activado nav-link active me-3" href="#">Catálogo</a></li>
+                    <li><a class="desactivado nav-link me-3" href="#">Cotizar</a></li>
+                    <li><a class="desactivado nav-link" href="#">Contacto</a></li>
+                </ul>
+                <br>
+                <button class="compra-online"><a href="#">COMPRA ONLINE</a></button>
+            </div>
         </nav>
     </header>
 
