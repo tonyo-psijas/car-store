@@ -17,13 +17,12 @@ header {
     grid-area: header;
     background-color: black;
     color: white;
+    padding-inline: 2rem;
 }
 
 .logo {
     font-family: "Zen Dots", sans-serif;
 }
-
-
 
 ul {
     list-style: none;
@@ -152,4 +151,43 @@ footer {
 footer a {
     text-decoration: none;
     color: rgb(132, 132, 132);
+}
+
+@media (768px <= width <= 992px) {
+
+    .inventario {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'aside'
+            'main'
+            'footer';
+    }
+
+    .buscador {
+        justify-content: center;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+
+    .inventario {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
 }
